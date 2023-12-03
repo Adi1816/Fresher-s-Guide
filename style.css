@@ -1,14 +1,22 @@
 @font-face{
-    font-family: Gilroy;
-    src: url(".../FG Trial 2/Gilroy_Panel Font.ttf") format('truetype');
+    font-family: montserrat;
+    src: url("Montserrat-Italic-VariableFont_wght.ttf") format('truetype');
 }
 
 @font-face{
     font-family: montserrat;
-    src: url(".../FG Trial 2/montserrat_Panel Font.ttf") format('truetype');
+    src: url("Montserrat-VariableFont_wght.ttf") format('truetype');
 }
 
+@font-face{
+    font-family: gilroy;
+    src: url("Gilroy-ExtraBold.otf") format('truetype');
+}
 
+@font-face{
+    font-family: gilroy;
+    src: url("Gilroy-Light.otf") format('truetype');
+}
 
 *{
     margin: 0;
