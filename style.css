@@ -1,7 +1,7 @@
-@font-face{
+/* @font-face{
     font-family: montserrat;
     src: url("Montserrat-Italic-VariableFont_wght.ttf") format('truetype');
-}
+} */
 
 @font-face{
     font-family: montserrat;
@@ -11,6 +11,11 @@
 @font-face{
     font-family: gilroy;
     src: url("Gilroy-ExtraBold.otf") format('truetype');
+}
+
+@font-face{
+    font-family: punk-kid;
+    src: url("punk\ kid.ttf") format('truetype');
 }
 
 /* @font-face{
@@ -203,7 +208,7 @@ video{
     font-family: gilroy;
     margin-right: 30px;
     color: transparent;
-    -webkit-text-stroke : 2px rgb(255, 0, 81);
+    -webkit-text-stroke : 1px rgb(255, 0, 81);
     transition: all linear 0.5s;
 }
 
