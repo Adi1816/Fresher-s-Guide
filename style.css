@@ -13,10 +13,10 @@
     src: url("Gilroy-ExtraBold.otf") format('truetype');
 }
 
-@font-face{
-    font-family: gilroy;
+/* @font-face{
+    font-family: Gilroy;
     src: url("Gilroy-Light.otf") format('truetype');
-}
+} */
 
 *{
     margin: 0;
