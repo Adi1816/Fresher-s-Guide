@@ -1,3 +1,15 @@
+@font-face{
+    font-family: Gilroy;
+    src: url(".../FG Trial 2/Gilroy_Panel Font.ttf") format('truetype');
+}
+
+@font-face{
+    font-family: montserrat;
+    src: url(".../FG Trial 2/montserrat_Panel Font.ttf") format('truetype');
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
