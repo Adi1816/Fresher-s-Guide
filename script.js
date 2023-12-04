@@ -254,8 +254,9 @@ gsap.from("#page4 h1", {
         "In MNCs, there's plenty of time as there are no assignments or irrelevant subjects. This realization came during the second and third semesters, especially after physics lab and classes. Math seemed easy and less time-consuming compared to the challenges faced while writing practical reports and giving vivas. When it comes to computing subjects, consider starting with either C++ or Java.<br/> -HARSH RAJ(MnC k22)-",
         "You may approach biotech branch in BIT Mesra through JEE as well as NEET. As a biotech student, this branch is pretty much chill compared to others and the profs and seniors are literally very supportive and genuine in behaviour. Overall if you have a good command on subject biology and have your interests in this subject, biotech is something that you'll cherish! <br/> -SOUMYA GOYAL(BIOTECH k22)-",
         "Civil engineering revolves around the construction of structures, making it an ideal choice for those intrigued by the processes involved in building bridges, roads, buildings, dams, and more. Enthusiasts can pursue civil engineering to work with top core companies such as NHAI, L&T, JINDAL, etc. To excel in this field, a strong foundation in mathematics and physics is essential. <br/> -RITESH KUMAR(CIVIL k22)-",
-        "Electronics and Computer Engineering (ECE) holds a lot of promise for the future, giving you the flexibility to explore different technical and core areas. Sure, it's challenging, but it's not impossible to get through the four-year journey. With a good plan and approach, managing both the technical and core subjects each semester becomes doable. Just don't try to memorise. <br/> -KESHAV AGARWAL(ECE k22)-",
+        "Electronics and Communication Engineering (ECE) holds a lot of promise for the future, giving you the flexibility to explore different technical and core areas. Sure, it's challenging, but it's not impossible to get through the four-year journey. With a good plan and approach, managing both the technical and core subjects each semester becomes doable. Just don't try to memorise. <br/> -KESHAV AGARWAL(ECE k22)-",
         "Firstly, you should be familiar with basic coding concepts, such as C and R. You should have a grasp of the fundamentals of mathematics and statistics from the 11th and 12th grades. Seniors and professors are very supportive, so you can approach them at any time for notes, previous year questions, and study materials. <br/> -APURVA MISHRA(QEDS k22)-",
+        "NOW YOU WILL READ SOME ADVICES FROM YOUR SENIORS ACROSS ALL THE BRANCHES. KAAFI SAARE DOUBTS REHTE HAI JAB AAP NAYE NAYE COLLEGE AATE HO, UMEED HAI ISSE PADHKAR DIL KO SANTUSHTI MILEGI, BAAKI AAP HUMEIN KABHI BHI WHATSAPP KAR SAKTE HAI :)<br/> ADITYA SRIVASTAVA(CSE k22)"
         // Add more content as needed
     ];
 
@@ -280,5 +281,5 @@ gsap.from("#page4 h1", {
     }
 
     // Set an interval to call the slideContent function every few seconds
-    setInterval(slideContent, 17000); // Change 3000 to the desired interval in milliseconds
+    setInterval(slideContent, 18000); // Change 3000 to the desired interval in milliseconds
 });
