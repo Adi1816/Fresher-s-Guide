@@ -1,3 +1,17 @@
+// Function to toggle between light and dark modes
+// function toggleMode() {
+//     const body = document.body;
+//     body.classList.toggle('light-mode');
+//     body.classList.toggle('dark-mode');
+//   }
+  
+  // You can also add a default mode based on user preference or time of day
+  // Uncomment and modify the following lines if needed
+  // const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  // if (prefersDarkMode) {
+  //   toggleMode();
+  // }
+
 var crsr = document.querySelector("#cursor")
 document.addEventListener("mousemove",function(dets){
     crsr.style.top=dets.y - 5 +"px"
@@ -149,6 +163,15 @@ gsap.from("#page4 h1", {
     duration: 1,
   });
 
+  Shery.imageMasker("#sansk-div" /* Element to target.*/, {
+    //Parameters are optional.
+    debug:true,
+    mouseFollower: true,
+    text: "Advices from Senior",
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+
 // parallax script
 
 // class parallaxTiltEffect {
@@ -282,4 +305,12 @@ gsap.from("#page4 h1", {
 
     // Set an interval to call the slideContent function every few seconds
     setInterval(slideContent, 18000); // Change 3000 to the desired interval in milliseconds
+});
+
+document.getElementById('page1').addEventListener('click', function() {
+    // Scroll to the About Us section
+    window.scrollTo({
+        top: document.getElementById('scroller').offsetTop,
+        behavior: 'smooth'
+    });
 });
