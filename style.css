@@ -3,6 +3,11 @@
     src: url("Montserrat-Italic-VariableFont_wght.ttf") format('truetype');
 } */
 
+/* @font-face{
+    font-family: Gilroy;
+    src: url("Gilroy-Light.otf") format('truetype');
+} */
+
 @font-face{
     font-family: montserrat;
     src: url("Montserrat-VariableFont_wght.ttf") format('truetype');
@@ -18,11 +23,6 @@
     src: url("punk\ kid.ttf") format('truetype');
 }
 
-/* @font-face{
-    font-family: Gilroy;
-    src: url("Gilroy-Light.otf") format('truetype');
-} */
-
 *{
     margin: 0;
     padding: 0;
@@ -35,6 +35,28 @@ html, body{
     width: 100%;
     height: 100%;
 }
+
+/* Add these styles for light mode */
+/* body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  } */
+  
+  /* Add these styles for dark mode */
+  /* body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  } */
+  
+  /* Add this style for the mode toggle button */
+  /* #modeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+   */
 
 *::selection{
     background-color: #fff;
@@ -53,7 +75,7 @@ body::-webkit-scrollbar{
     border-radius: 50%;
     background-color: rgb(255, 0, 81);
     position: fixed;
-    z-index: 99;
+    z-index: 9;
 }
 
 #cursor-blur{
@@ -161,6 +183,7 @@ video{
     left: -3%;
     bottom: 4%;
     transition: all ease 0.5s;
+    cursor: pointer;
 }
 
 #page1 .arrow i{
@@ -455,7 +478,7 @@ video{
 }
 
 .card:hover{
-    transform: rotate3d(-1, 1, 0, 360deg) scale(1.27);
+    transform: rotate3d(-1, 1, 0, 360deg) scale(1.29);
 }
 
 #sansk-div{
@@ -468,7 +491,7 @@ video{
     align-items: center;
     overflow: hidden;
     padding-left: 18px;
-    z-index: 998;
+    z-index: 9;
 }
 
 #sansk-div img{
@@ -489,8 +512,8 @@ video{
     color: black;
     line-height: 60px;
     width: 75%;
-    font-family: "punk-kid";
-    z-index: 999;
+    font-family: punk-kid;
+    /* z-index: 8; */
 }
 
 adii{
