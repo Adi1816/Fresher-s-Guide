@@ -8,22 +8,22 @@
     src: url("Gilroy-Light.otf") format('truetype');
 } */
 
-@font-face{
+@font-face {
     font-family: montserrat;
     src: url("Montserrat-VariableFont_wght.ttf") format('truetype');
 }
 
-@font-face{
+@font-face {
     font-family: gilroy;
     src: url("Gilroy-ExtraBold.otf") format('truetype');
 }
 
-@font-face{
+@font-face {
     font-family: punk-kid;
     src: url("punk\ kid.ttf") format('truetype');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,25 +31,54 @@
     color: aliceblue;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
+/* 
+Add these styles for light mode
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
 
+Add these styles for dark mode
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+} */
+
+/* Add this style for the mode toggle button */
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+/* Add this style for the mode toggle button icon */
+#themeIcon {
+    width: 30px;
+    height: 30px;
+}
 /* Add these styles for light mode */
 /* body.light-mode {
     background-color: #ffffff;
     color: #000000;
   } */
-  
-  /* Add these styles for dark mode */
-  /* body.dark-mode {
+
+/* Add these styles for dark mode */
+/* body.dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
   } */
-  
-  /* Add this style for the mode toggle button */
-  /* #modeToggle {
+
+/* Add this style for the mode toggle button */
+/* #modeToggle {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -58,18 +87,18 @@ html, body{
   }
    */
 
-*::selection{
+*::selection {
     background-color: #fff;
-    color: rgb(255, 0, 81) ;
+    color: rgb(255, 0, 81);
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: block;
     width: 0;
     background-color: rgb(255, 0, 81);
 }
 
-#cursor{
+#cursor {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -78,7 +107,7 @@ body::-webkit-scrollbar{
     z-index: 9;
 }
 
-#cursor-blur{
+#cursor-blur {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -88,9 +117,9 @@ body::-webkit-scrollbar{
     z-index: 9;
 }
 
-#nav{
+#nav {
     display: flex;
-    width: 100%;
+    width: 100dvw;
     height: 100px;
     /* background-color: red; */
     align-items: center;
@@ -101,35 +130,35 @@ body::-webkit-scrollbar{
     z-index: 999999;
 }
 
-#nav img{
+#nav img {
     height: 170px;
 }
 
-#nav h4{
+#nav h4 {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 10vh;
 }
 
-#bit{
+#bit {
     margin-left: -10px;
-   scale: 0.5;
+    scale: 0.5;
 }
 
-video{
-    width: 100%;
+video {
+    width: 100vw;
     height: 100%;
     object-fit: cover;
     position: fixed;
     z-index: -1;
 }
 
-#main{
+#main {
     position: relative;
     background-color: rgba(0, 0, 0, 0.303);
 }
 
-#page1{
+#page1 {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -141,14 +170,14 @@ video{
     z-index: 9;
 }
 
-#page1 h1{
+#page1 h1 {
     font-size: 100px;
     font-weight: 800;
     position: relative;
     color: #fff;
 }
 
-#page1 h1::before{
+#page1 h1::before {
     content: "HOLA BITIANS.";
     position: absolute;
     color: #000;
@@ -157,20 +186,20 @@ video{
     -webkit-text-stroke: 1px rgb(255, 0, 81);
     z-index: -1;
 }
- 
-#page1 h2{
+
+#page1 h2 {
     font-size: 25px;
     font-weight: 600;
 }
 
-#page1 p{
+#page1 p {
     font-size: 15px;
     font-weight: 400;
     width: 57%;
     padding: 13px;
 }
 
-#page1 .arrow{
+#page1 .arrow {
     height: 26vh;
     width: 26vh;
     background-color: transparent;
@@ -186,23 +215,26 @@ video{
     cursor: pointer;
 }
 
-#page1 .arrow i{
+
+#page1 .arrow i {
     font-size: 12vh;
     font-weight: 200;
 }
 
-#page1 .arrow:hover{
+#page1 .arrow:hover {
     scale: 0.5;
     background-color: rgb(255, 0, 81);
 }
 
-#page2{
+
+
+#page2 {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     z-index: 10;
 }
 
-#scroller{
+#scroller {
     /* background-color: red; */
     white-space: nowrap;
     overflow-y: hidden;
@@ -211,7 +243,7 @@ video{
     z-index: 99;
 }
 
-#scroller::-webkit-scrollbar{
+#scroller::-webkit-scrollbar {
     display: none;
 }
 
@@ -224,68 +256,127 @@ video{
     animation-iteration-count: infinite;
 }
 
-#scroller h4{
+#scroller h4 {
     display: inline-block;
     font-size: 110px;
     font-weight: 800;
     font-family: gilroy;
     margin-right: 30px;
     color: transparent;
-    -webkit-text-stroke : 3px rgb(255, 0, 81);
+    -webkit-text-stroke: 3px rgb(255, 0, 81);
     transition: all linear 0.5s;
 }
 
-#scroller #scroller1 h4:hover{
+#scroller #scroller1 h4:hover {
     color: rgb(255, 0, 81);
 }
 
-@keyframes scroll{
-    from{
+@keyframes scroll {
+    from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
 }
 
-#aboutus{
+#aboutus {
     width: 100%;
     height: 40vh;
+    min-height: 0px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
     justify-content: space-around;
     text-align: center;
-    padding: 0px 50px;
-    margin-top: 8vh;
+    padding: 0px 55px;
+    margin-top: 3vh;
     position: relative;
     z-index: 999;
     /* background-color: red; */
 }
 
-#aboutusin{
-    width: 50%;
+.overlay-image-container {
+    display: flex;
+    margin-top: -2rem;
+    gap: 50rem;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: red; */
 }
 
-#aboutusin h3{
+#aboutusin h3 {
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 20px;
-    margin-top: -50px ;
+    /* margin-top: 5px; */
 }
 
-#aboutusin p{
+.aboutuP p {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* width: 46%; */
+    text-align: center;
+    /* width: 40%; */
     font-size: 15px;
     line-height: 19px;
 }
 
 
-#aboutus img{
+#aboutus img {
     width: 200px;
     height: 180px;
     border-radius: 10px;
     object-fit: cover;
+    margin-top: 5rem;
 }
+
+#place{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Hide the #Place div on screens with a width of 768 pixels or less (typical mobile devices) */
+    #place {
+        font-weight: 800;
+        font-size: 175%;
+        display: flex;
+        flex-direction: column;
+        animation: floatText 10s linear infinite; /* Adjust the duration as needed */
+        right: 0;
+        height: 5vh;
+        
+  
+    }
+    @keyframes floatText {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    
+    #place a{
+        color: rgb(255, 0, 81);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflowing text */
+        text-overflow: ellipsis;
+        height: 5vh;
+    }
+  }
+
 
 /* <!--parallax effect--!> */
 
@@ -398,8 +489,8 @@ video{
     width: calc(100% - 4rem);
     height: calc(100% - 4rem);
   } */
-  
-  /* .abs-site-link {
+
+/* .abs-site-link {
 
     position: fixed;
     bottom: 20px;
@@ -408,7 +499,7 @@ video{
     font-size: 1.6rem;
   } */
 
-#cards-container{
+#cards-container {
     /* background-color: red; */
     height: 60vh;
     display: flex;
@@ -418,7 +509,7 @@ video{
     position: relative;
 }
 
-.card{
+.card {
     width: 22%;
     height: 80%;
     /* background-color: green; */
@@ -434,22 +525,24 @@ video{
 
 }
 
-#card1{
+#card1 {
     background-image: url(att.jpg);
     opacity: 0.8;
 }
-#card2{
+
+#card2 {
     background-image: url(notes.jpg);
     opacity: 0.8;
 
 }
-#card3{
+
+#card3 {
     background-image: url(clubs.jpg);
     opacity: 0.8;
 
 }
 
-.overlay{
+.overlay {
     height: 100%;
     width: 100%;
     background: linear-gradient(to bottom left, #ff3399 0%, #ff0000 100%);
@@ -459,7 +552,7 @@ video{
     /* transition: all ease 0.7s; */
 }
 
-.overlay h4{
+.overlay h4 {
     font-size: 21px;
     text-align: center;
     margin-bottom: 20px;
@@ -468,20 +561,20 @@ video{
     font-weight: 800;
 }
 
-.overlay p{
+.overlay p {
     color: black;
     font-weight: 600;
 }
 
-.card:hover .overlay{
+.card:hover .overlay {
     opacity: 100%;
 }
 
-.card:hover{
+.card:hover {
     transform: rotate3d(-1, 1, 0, 360deg) scale(1.29);
 }
 
-#sansk-div{
+#sansk-div {
     margin-top: 100px;
     height: 230px;
     background-color: #ff9999;
@@ -494,18 +587,18 @@ video{
     z-index: 9;
 }
 
-#sansk-div img{
+#sansk-div img {
     height: 250px;
     opacity: 0.4;
 }
 
-#sansk-div #adii img{
+#sansk-div #adii img {
     height: 280px;
     opacity: 0.4;
 }
 
 
-#sansk-div p{
+#sansk-div p {
     font-size: 50px;
     text-align: center;
     font-weight: 900;
@@ -516,29 +609,80 @@ video{
     /* z-index: 8; */
 }
 
-adii{
+adii {
     height: 270px;
 }
 
-#page3{
+#Place{
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    margin-bottom: -40vh;
+    z-index: 1000;
+}
+
+#Place h5{
+    text-align: right;
+    font-size: 4.5vh;
+    font-weight: 900;
+    color: rgb(255, 0, 81);
+    margin-top: 40vh;
+    margin-right: 2vh;
+    transform: rotate(-20deg);
+    z-index: 1000;
+    animation: glow 4s infinite;
+
+}
+
+@media (max-width: 768px) {
+    /* Hide the #Place div on screens with a width of 768 pixels or less (typical mobile devices) */
+    #Place {
+      display: none;
+    }
+  }
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #ff9191, 0 0 20px rgb(255, 91, 83), 0 0 40px #ff0202;
+    }
+    50% {
+      text-shadow: 0 0 30px #ff9191, 0 0 40px rgb(255, 91, 83), 0 0 80px #ff0202;
+    }
+    100% {
+      text-shadow: 0 0 5px #ff9191, 0 0 20px rgb(255, 91, 83), 0 0 40px #ff0202;
+    }
+  }
+
+#Place h5 a{
+    text-decoration: none;
+
+}
+/* #Place h5:hover{
+    background: rgb(255, 0, 81);
+    color: #323946;
+    box-shadow: 0 0 1rem rgb(255, 0, 81);
+} */
+
+#page3 {
     height: 550px;
     width: 100%;
     background-color: black;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     justify-content: space-between;
     align-items: center;
     display: flex;
     position: relative;
 }
 
-#para{
+#para {
     align-items: center;
     justify-content: center;
     z-index: 9999;
     height: 20vh;
 }
 
-#para .Para{
+#para .Para {
     font-size: 2.5vh;
     font-weight: 600;
     font-family: gilroy;
@@ -546,7 +690,7 @@ adii{
 
 }
 
-#para p{
+#para p {
     padding: 60px;
     margin-bottom: 80px;
     height: 30vh;
@@ -556,7 +700,7 @@ adii{
     text-align: center;
     margin-left: 48.5vh;
     text-transform: uppercase;
-    
+
 }
 
 /* #para #a{
@@ -565,32 +709,48 @@ adii{
     font-family: gilroy;
 } */
 
-#page3 img{
+#page3 img {
     position: absolute;
     height: 90px;
 }
 
-#page3 #col1{
+#page3 #col1 {
     left: 20%;
-    top: 20%;
+    top: 35%;
 }
 
-#page3 #col3{
+#page3 #col3 {
     left: 20.7%;
-    top: 20.7%;
+    top: 35.7%;
 }
 
-#page3 #col2{
-    right: 15%;
-    bottom: 18%;
+#page3 #col2 {
+    right: 20%;
+    bottom: 5%;
 }
 
-#page3 #col4{
-    right: 15.7%;
-    bottom: 18%;
+#page3 #col4 {
+    right: 20.7%;
+    bottom: 5.7%;
 }
 
-#page4{
+@media (max-width: 600px) {
+    #page3 #col2{
+        right: 20%;
+        bottom: 26%;
+    }
+    #page3 #col4{
+        right: 20%;
+        bottom: 26.7%;
+    }
+    #page3 #col1{
+        right: 20%;
+        bottom: 28%;
+    }  
+}
+
+
+#page4 {
     height: 50vh;
     width: 100%;
     /* background-color: blue; */
@@ -599,9 +759,11 @@ adii{
     justify-content: center;
     gap: 3vh;
     position: relative;
+
+    background-color: #000;
 }
 
-#page4 h1{
+#page4 h1 {
     font-size: 14vh;
     position: absolute;
     top: 2%;
@@ -609,22 +771,23 @@ adii{
     color: #000;
     -webkit-text-stroke: 2px #fff;
     font-family: gilroy;
-
+    text-align: center;
 }
 
-.elem{
+.elem {
     height: 50%;
     width: 30%;
     overflow: hidden;
     position: relative;
     border-radius: 20px;
+
 }
 
-.elem h2{
+.elem h2 {
     height: 100%;
     width: 100%;
     /* background: linear-gradient(to bottom left, #ff0051 0%, #ff9999 100%); */
-    background-color:rgb(255, 0, 81);
+    background-color: rgb(255, 0, 81);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -638,11 +801,11 @@ adii{
 
 }
 
-.elem img{
+.elem img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+
     opacity: 0.6;
     transition: all ease 0.6s;
     scale: 1.2;
@@ -650,17 +813,16 @@ adii{
 
 }
 
-.elem:hover h2{
+.elem:hover h2 {
     color: #fff;
     background-color: transparent;
 }
 
-.elem:hover img{
+.elem:hover img {
     scale: 1;
 }
 
-#footer{
-    margin-top: 3vh;
+#footer {
     height: 40vh;
     width: 100%;
     /* background-color: #ff3399; */
@@ -673,7 +835,7 @@ adii{
     padding: 0 100px
 }
 
-#footer > img {
+#footer>img {
     position: absolute;
     left: 0;
     height: 100%;
@@ -681,37 +843,39 @@ adii{
 }
 
 #f1 img {
-   height: 30vh;
+    height: 30vh;
 }
 
 #f1,
 #f2,
 #f3,
 #f4 {
-  width: fit-content;
-  position: relative;
-  z-index: 99;
-  /* background-color: red; */
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+    /* background-color: red; */
 }
+
 #f2 h3 {
-  font-size: 1.6vw;
-  white-space: nowrap;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: 800;
-  margin-bottom: 8px;
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
 }
 
 #f3 h3 {
-  font-size: 1.6vw;
-  white-space: nowrap;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: 800;
-  margin-bottom: 8px;
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
 }
 
-#f2,#f3{
+#f2,
+#f3 {
     text-decoration: none;
 }
 
@@ -723,4 +887,4 @@ adii{
     font-weight: 600;
     line-height: 20px;
     margin-bottom: 8px;
-  }
+}
