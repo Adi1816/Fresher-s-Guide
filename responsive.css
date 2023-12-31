@@ -1,0 +1,480 @@
+/* Responsive styles */
+/* Styles for smaller screens */
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    #nav {
+        display: flex;
+        width: 100dvw;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0px 70px;
+        position: fixed;
+        z-index: 999999;
+
+    }
+
+    #nav img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #nav h4 {
+        font-size: 6vh;
+    }
+
+    #page1 {
+        gap: 10px;
+        padding: 10px;
+        /* min-height: 100vh; */
+    }
+
+
+    #page1 h1 {
+        /* margin-top: 20px; */
+        font-size: 50px;
+        font-weight: 800;
+        position: relative;
+        color: #fff;
+    }
+
+    #page1 h2 {
+        font-size: 20px;
+        font-weight: 600;
+        /* width: 90%; */
+    }
+
+    #page1 p {
+        font-size: 15px;
+        font-weight: 400;
+        width: 100vw;
+        text-align: center;
+
+    }
+
+    #page1 .arrow {
+        height: 15vh;
+        width: 15vh;
+        background-color: transparent;
+        border: 1px solid rgb(255, 0, 81);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        left: 40%;
+        /* transform: translateX(-50%); */
+        cursor: pointer;
+        transition: all ease 0.5s;
+    }
+
+    #page1 .arrow:hover {
+        background-color: rgb(255, 0, 81);
+    }
+
+    #page1 .arrow i {
+        font-size: 8vh;
+        font-weight: 100;
+    }
+
+    #scroller h4 {
+        display: inline-block;
+        font-size: 60px;
+        font-weight: 200;
+        opacity: 0.8;
+        font-family: gilroy;
+        margin-right: 30px;
+    }
+
+    #scroller #scroller1 h4:hover {
+        opacity: 1;
+    }
+
+    #aboutus {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        padding: 0%;
+        flex-direction: column;
+        gap: 0px;
+        align-items: normal;
+        justify-content: normal;
+        position: relative;
+        z-index: 999;
+        margin-top: 30px;
+    }
+
+    .overlay-image-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+
+    .overlay-image h4 {
+        font-size: 12px;
+    }
+
+    .overlay-image p {
+        font-size: x-small;
+    }
+
+    /* #aboutusin {
+        /* width: 100%; */
+        /* margin-top: 10px; */
+    /* } */
+
+    #aboutusin h3 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 800;
+        width: 100%;
+    }
+
+    .aboutuP p {
+        font-size: 15px;
+        line-height: 19px;
+        margin-top: 5rem;
+        position: relative;
+        top: 5rem;
+        padding: 0px 10px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+
+    #aboutus img {
+        width: 150px;
+        height: 90px;
+        border-radius: 10px;
+        /* object-fit: cover; */
+    }
+
+    #cards-container {
+        /* background-color: red; */
+        margin-top: 50px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: -90px; */
+        position: relative;
+    }
+
+    .card {
+        width: 200px;
+        height: 50%;
+
+        /* background-color: green; */
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+        /* transition: all ease 0.7s; */
+        overflow: hidden;
+        z-index: 998;
+        transform: rotate3d(-1, 1, 0, 230deg);
+        transition: transform 1.2s ease, box-shadow 1.2s ease;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+    }
+
+    #card1 {
+        background-image: url(att.jpg);
+        opacity: 0.8;
+        /* width: 100%; */
+        height: 500px;
+    }
+
+    #card2 {
+        background-image: url(notes.jpg);
+        opacity: 0.8;
+        height: 500px;
+    }
+
+    #card3 {
+        background-image: url(clubs.jpg);
+        opacity: 0.8;
+        height: 500px;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom left, #ff3399 0%, #ff0000 100%);
+        padding: 10px 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        /* transition: all ease 0.7s; */
+    }
+
+    .overlay h4 {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 0px;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .overlay p {
+        font-size: 12px;
+        color: black;
+        font-weight: 600;
+    }
+
+    .card:hover .overlay {
+        opacity: 100%;
+    }
+
+    .card:hover {
+        transform: rotate3d(-1, 1, 0, 360deg) scale(1.29);
+    }
+
+    #sansk-div {
+        margin-top: 100px;
+        height: 150px;
+        background-color: #ff9999;
+        /* background: linear-gradient(to bottom, #ff0051 0%, #ff9999 100%); */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        padding: 18px;
+        z-index: 9;
+    }
+
+    #sansk-div img {
+        height: 60px;
+        opacity: 0.4;
+    }
+
+    #sansk-div #adii img {
+        height: 60px;
+        opacity: 0.4;
+    }
+
+
+    #sansk-div p {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 900;
+        color: black;
+        line-height: 30px;
+        width: 65%;
+        letter-spacing: 0px;
+        font-family: punk-kid;
+        /* z-index: 8; */
+    }
+
+    #page3 {
+        height: 650px;
+        width: 100%;
+        background-color: black;
+        margin-top: 0px;
+
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        position: relative;
+        margin-bottom: -50px;
+    }
+
+    #para {
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        height: 50vh;
+    }
+
+    #para .Para {
+        font-size: 2.4vh;
+        font-weight: 600;
+        font-family: gilroy;
+    }
+
+    #para p {
+        padding: 0px 60px;
+        margin-bottom: 80px;
+        height: 30vh;
+        line-height: 20px;
+        font-size: 2vh;
+        font-weight: 200;
+        width: 100%;
+        text-align: center;
+        margin-left: 0vh;
+        text-transform: uppercase;
+    }
+
+    /* #para #a{
+        font-size: 1.7vh;
+        font-weight: 500;
+        font-family: gilroy;
+    } */
+
+    #page3 img {
+        position: absolute;
+        height: 60px;
+    }
+
+    #page3 #col1 {
+        left: 20%;
+        top: 10%;
+    }
+
+    #page3 #col3 {
+        left: 20.7%;
+        top: 10.7%;
+    }
+
+    #page3 #col2 {
+        right: 20%;
+        bottom: 16%;
+    }
+
+    #page3 #col4 {
+        right: 20%;
+        bottom: 16%;
+    }
+
+    /* Other responsive styles */
+
+    #page4 {
+        height: 60vh;
+        width: 100%;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        /* gap: 3vh; */
+        position: relative;
+    }
+
+    #page4 h1 {
+        font-size: 5.1vh;
+        position: absolute;
+        padding: 0px 10px;
+        top: -8%;
+        font-weight: 800;
+        color: #000;
+        -webkit-text-stroke: 2px #fff;
+        font-family: gilroy;
+
+    }
+
+    .elem {
+        height: 50%;
+        width: 80%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .elem h2 {
+        height: 100%;
+        width: 100%;
+        /* background: linear-gradient(to bottom left, #ff0051 0%, #ff9999 100%); */
+        background-color: rgb(255, 0, 81);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: #000;
+        text-align: center;
+        font-size: 2.5vh;
+        font-weight: 800;
+        z-index: 100;
+        position: absolute;
+        transition: all ease 0.6s;
+
+    }
+
+    #footer {
+        height: 40vh;
+        width: 100%;
+        /* margin-top: 20px; */
+        /* background-color: #000; */
+        /* background-color: #ff3399; */
+        background: linear-gradient(to top right, #ff0051 0%, #cc0066 100%);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2vw;
+        padding: 0px 20px
+    }
+
+    #f1 img {
+        height: 0vh;
+    }
+
+
+    #f2 h3 {
+        font-size: 2.6vw;
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    #f3 h3 {
+        font-size: 2.6vw;
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    #f4 h4 {
+        font-size: 2vw;
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+}
+
+
+
+
+
+/* Styles for medium screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* body {
+        font-size: 16px;
+    } */
+
+    /* Other responsive styles */
+}
+
+/* Styles for larger screens */
+@media only screen and (min-width: 1025px) {
+
+    /* body {
+        /* font-size: 180px; */
+    /* }  */
+
+    /* Other responsive styles */
+}
