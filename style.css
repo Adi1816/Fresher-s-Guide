@@ -519,7 +519,7 @@ video {
     /* transition: all ease 0.7s; */
     overflow: hidden;
     z-index: 998;
-    transform: rotate3d(-1, 1, 0, 230deg);
+    transform: rotate3d(-1, 1, 0, 300deg);
     transition: transform 1.2s ease, box-shadow 1.2s ease;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 
