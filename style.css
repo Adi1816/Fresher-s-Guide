@@ -635,10 +635,27 @@ adii {
 
 }
 
+#Place #hangout{
+    /* background-color: #ff0000; */
+    text-align: left;
+    font-size: 3.5vh;
+    font-weight: 900;
+    color: rgb(255, 0, 81);
+    margin-top: 0vh;
+    margin-left: 1vh;
+    transform: rotate(26deg);
+    z-index: 1000;
+    animation: glow 4s infinite;
+
+}
+
 @media (max-width: 768px) {
     /* Hide the #Place div on screens with a width of 768 pixels or less (typical mobile devices) */
     #Place {
       display: none;
+    }
+    #Place #hangout{
+        display: none;
     }
   }
 
@@ -716,12 +733,12 @@ adii {
 
 #page3 #col1 {
     left: 20%;
-    top: 35%;
+    top: 40%;
 }
 
 #page3 #col3 {
     left: 20.7%;
-    top: 35.7%;
+    top: 40.7%;
 }
 
 #page3 #col2 {
